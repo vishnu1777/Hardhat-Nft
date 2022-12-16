@@ -18,5 +18,11 @@ viii> we are going to use pinfiletoipfs and pinjsontoipfs
 ix> to work with paths we are going to use : yarn add --dev path
 
 
+DynamicSvg: In our Dynamic svg we are not going to use ipfs://
+we are going to convert our svg image to uri by using base64
+To convert svg to image programatically add :yarn add --dev base64-sol
+
+
+We also gonna use  Aggregatorv3Interface for using the pricFeeds in the chainlink
 
 ```

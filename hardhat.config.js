@@ -37,6 +37,7 @@ module.exports = {
       url: GOERLI_RPC_URL,
       accounts: [PRIVATE_KEY],
       chainId: 5,
+
       blockConfirmations: 6,
     },
   },
@@ -52,13 +53,24 @@ module.exports = {
         version: "0.4.19",
       },
       {
-        version: "0.8.0",
+        version: "0.6.0",
       },
     ],
   },
   etherscan: {
-    apiKey: ETHERSCAN_API_KEY,
+    apiKey: { goerli: ETHERSCAN_API_KEY },
+    customChains: [
+      {
+        network: "goerli",
+        chainId: 5,
+        urls: {
+          apiURL: "https://api-goerli.etherscan.io/api",
+          browserURL: "https://goerli.etherscan.io/",
+        },
+      },
+    ],
   },
+
   gasReporter: {
     enabled: true,
     currency: "USD",
