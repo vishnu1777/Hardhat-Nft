@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts/DynamicSvgNft.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> DynamicSvgNft.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/17</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: MIT 
+pragma solidity ^0.8.17;
+&nbsp;
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+import"base64-sol/base64.sol";
+  contract DynamicSvgNft is ERC721{
+    uint256 private s_tokenCounter;
+    // because of the images are constant we are assigning it as an immutable asset
+    string private i_lowImageURI;
+    string private i_highImageURI;
+&nbsp;
+    AggregatorV3Interface internal immutable i_priceFeed;
+&nbsp;
+    mapping (uint256 =&gt; int256) public s_tokenIdToHighValue;
+    event CreatedNft(uint256 indexed tokenId,int256 indexed highValue);
+&nbsp;
+    string private constant base64EncodedSvgPrefix = "data:img/svg+xml;base64,";
+<span class="fstat-no" title="function not covered" >    constructor(address priceFeedAddress,string memory lowSvg,string memory highSvg) ERC721("DynamicSvgNft","DSN"){</span>
+<span class="cstat-no" title="statement not covered" >        s_tokenCounter = 0</span>;
+<span class="cstat-no" title="statement not covered" >         i_priceFeed = AggregatorV3Interface(priceFeedAddress)</span>;
+        // we are getting the image uri of json formatted string
+<span class="cstat-no" title="statement not covered" >        i_lowImageURI = svgToImageURI(lowSvg)</span>;
+<span class="cstat-no" title="statement not covered" >        i_highImageURI = svgToImageURI(highSvg)</span>;
+       
+    }
+    // this function is used to convert the svg code that is hardcoded to ipfs:// type uri
+<span class="fstat-no" title="function not covered" >    function svgToImageURI(string memory svg)public pure returns (string memory){</span>
+        // the abi.encodePacked is an string concatination function in solidity
+        // the abi converts the string into binary version of the value given and then concat it
+        // since abi.encode creates a big binary file 
+        // so to compress we are going to use abi.encodePacked
+<span class="cstat-no" title="statement not covered" >        string memory svgBase64Encoded = Base64.encode(bytes(string(abi.encodePacked(svg))));</span>
+<span class="cstat-no" title="statement not covered" >        return string(abi.encodePacked(base64EncodedSvgPrefix,svgBase64Encoded));</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function mintNft(int256 highValue) public{</span>
+<span class="cstat-no" title="statement not covered" >        s_tokenIdToHighValue[s_tokenCounter] = highValue</span>;
+        
+<span class="cstat-no" title="statement not covered" >        s_tokenCounter+=1</span>;
+<span class="cstat-no" title="statement not covered" >        _safeMint(msg.sender,s_tokenCounter)</span>;
+<span class="cstat-no" title="statement not covered" >        emit CreatedNft(s_tokenCounter,highValue);</span>
+    }
+<span class="fstat-no" title="function not covered" >    function _baseURI()internal pure override returns(string memory){</span>
+<span class="cstat-no" title="statement not covered" >        return  "data:application/json;base64,";</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function tokenURI(uint256 tokenId)public view override returns(string memory){</span>
+<span class="cstat-no" title="statement not covered" >        require(!_exists(tokenId),"URI Query for non-existant token")</span>;
+<span class="cstat-no" title="statement not covered" >       string memory imageURI= i_lowImageURI;</span>
+<span class="cstat-no" title="statement not covered" >        (,int256 price, , , ) = i_priceFeed.latestRoundData();</span>
+<span class="cstat-no" title="statement not covered" >        if(price &gt;= s_tokenIdToHighValue[tokenId])</span>
+        {
+<span class="cstat-no" title="statement not covered" >            imageURI = i_highImageURI</span>;
+        }
+&nbsp;
+        // name function is present in erc721
+        // we are going to concatenate these things 
+        /* we are first and foremost converting the image file into json format 
+           And then after getting the json we are appending the json to the prefix from baseURI
+           next we are going to typecase it by string and we return it*/
+<span class="cstat-no" title="statement not covered" >         return string(</span>
+                abi.encodePacked(
+                    _baseURI(),
+                    Base64.encode(
+                        bytes(
+                            abi.encodePacked(
+                                '{"name":"',
+                                name(), // You can add whatever name here
+                                '", "description":"An NFT that changes based on the Chainlink Feed", ',
+                                '"attributes": [{"trait_type": "coolness", "value": 100}], "image":"',
+                                imageURI,
+                                '"}'
+                            )
+                        )
+                    )
+                )
+            );
+      
+         
+}
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jan 02 2023 13:48:24 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

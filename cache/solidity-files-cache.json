@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/vishnu/SmartContract/hardhat-nft/contracts/BasicNft.sol": {
-      "lastModificationDate": 1670738671798,
-      "contentHash": "f5930586c6e89c5ca50913a1cb0adf9e",
+      "lastModificationDate": 1671355467464,
+      "contentHash": "9930348fd8b15a2349c6727d9de20936",
       "sourceName": "contracts/BasicNft.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -1004,11 +1004,11 @@
       ]
     },
     "/home/vishnu/SmartContract/hardhat-nft/contracts/test/MockV3Aggregator.sol": {
-      "lastModificationDate": 1671124404445,
-      "contentHash": "661ec927455cb70dd2260d1ceae222c4",
+      "lastModificationDate": 1672648634666,
+      "contentHash": "885fd4c64708e05dc03a0d04fdd4291d",
       "sourceName": "contracts/test/MockV3Aggregator.sol",
       "solcConfig": {
-        "version": "0.6.12",
+        "version": "0.8.17",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -1038,10 +1038,10 @@
         }
       },
       "imports": [
-        "@chainlink/contracts/src/v0.6/tests/MockV3Aggregator.sol"
+        "@chainlink/contracts/src/v0.8/mocks/VRFCoordinatorV2Mock.sol"
       ],
       "versionPragmas": [
-        "^0.6.0"
+        "^0.8.0"
       ],
       "artifacts": []
     },
@@ -1075,7 +1075,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -1119,7 +1119,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -1164,7 +1164,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -1206,7 +1206,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },

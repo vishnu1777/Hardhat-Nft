@@ -10,7 +10,7 @@ const {
 } = require("../utils/uploadToPinata");
 
 const FUND_AMOUNT = "1000000000000000000000";
-const imagesLocation = "./images/randomNft/";
+const imagesLocation = "./images/randomNftImages/";
 let tokenUris = [
   "ipfs://QmdsMpGt2SzsS1zBfshXusXt4sEv27eVFT4WtEYpAF2ULk",
   "ipfs://Qmf3wUfzX8jXrK7DHBXS4ZdSVmeouJcyLtxpJJrNjCRVyB",
